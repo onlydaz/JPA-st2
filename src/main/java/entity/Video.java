@@ -1,40 +1,40 @@
 package entity;
 
 import java.io.Serializable;
-import java.util.List;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Videos")
-@NamedQuery(name="Video.findAll", query="SELECT v FROM Video v")
+@Table(name = "Videos")
+@NamedQuery(name = "Video.findAll", query = "SELECT v FROM Video v")
 public class Video implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name="VideoId")
+    @Column(name = "VideoId")
     private String videoId;
 
-    @Column(name="Active")
+    @Column(name = "Active")
     private int active;
 
-    @Column(name="Description", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "Description", columnDefinition = "NVARCHAR(MAX)")
     private String description;
 
-    @Column(name="Poster")
+    @Column(name = "Poster")
     private String poster;
 
-    @Column(name="Title", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "Title", columnDefinition = "NVARCHAR(MAX)")
     private String title;
 
-    @Column(name="Views")
+    @Column(name = "Views")
     private int views;
 
     @ManyToOne
-    @JoinColumn(name="CategoryId")
+    @JoinColumn(name = "CategoryId")
     private Category category;
 
-    public Video() {}
+    public Video() {
+    }
 
     // Getters and Setters
     public String getVideoId() {
@@ -93,4 +93,3 @@ public class Video implements Serializable {
         this.category = category;
     }
 }
-

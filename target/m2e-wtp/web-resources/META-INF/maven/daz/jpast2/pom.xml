@@ -20,7 +20,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- JUnit for testing -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -28,7 +27,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Hibernate Core for ORM functionality -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -36,21 +34,18 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<!-- Hibernate Validator for bean validation -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>8.0.1.Final</version>
 		</dependency>
 
-		<!-- Jakarta Validation API for validation annotations -->
 		<dependency>
 			<groupId>jakarta.validation</groupId>
 			<artifactId>jakarta.validation-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
 
-		<!-- Hibernate JPA Model Generator for generating JPA model classes -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-jpamodelgen</artifactId>
@@ -58,7 +53,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- H2 Database for in-memory testing -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -66,7 +60,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- SQL Server JDBC driver -->
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
@@ -78,6 +71,7 @@
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 			<version>2.0.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
@@ -89,8 +83,7 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>4.0.1</version>
 			<scope>provided</scope>
-		</dependency>
-		
+		</dependency>	
 	</dependencies>
 
 	<build>
